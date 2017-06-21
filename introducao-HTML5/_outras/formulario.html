@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="pt-br">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8 "/>
+		<title>Aprendendo Formulario HTML</title>
+	</head>
+	<body>
+		<form action="" method="get"><!-- get e o post -->
+			<label for="nome">Nome:</label>
+			<input type="text" name="" id="nome" />
+			<label for="senha">Senha:</label>
+			<input type="password" name="" id="senha" />
+			<fieldset>
+				<legend><label>Sexo:</label></legend>
+				<input type="radio"  name="sexo" id="homem" value="Homem" /><label for="homem">Homem</label>
+				<input type="radio"  name="sexo" id="mulher" value="Mulher" /><label for="mulher">Mulher</label>
+			</fieldset><br />
+			<label>Cursos</label><br />
+			<input type="checkbox"  name="curso" id="xhtml"       value="xhtml"      /><label for="xhtml">XHTML</label><br />
+			<input type="checkbox"  name="curso" id="html_cinco"       value="html5"      /><label for="html_cinco">HTML5</label><br />
+			<input type="checkbox"  name="curso" id="css"         value="css"        /><label for="css">CSS</label><br />
+			<input type="checkbox"  name="curso" id="css_tres"        value="css3"       /><label for="css_tres">CSS3</label><br />
+			<input type="checkbox"  name="curso" id="javascript"  value="javascript" /><label for="javascript">JavaScript</label><br />
+			<br /><hr />
+			País<br />
+			<select>
+				<option>Brasil</option>
+				<option>China</option>
+				<option>Canadá</option>
+				<option>EUA</option>
+				<option>Japão</option>
+			</select><br />
+			
+			Editor ou Navegador<br />
+			<select>
+				<optgroup label="Editor">
+					<option>Notepad</option>
+					<option>Notepad++</option>
+					<option>Sublime Text</option>
+					<option>Dream Weaver</option>
+					<option>Eclipse</option>
+					<option>NetBeans</option>
+				</optgroup>
+				<optgroup label="Navegador">
+					<option>Mozila Firefox</option>
+					<option>Opera</option>
+					<option>Internet Explorer</option>
+					<option>Google Chromme</option>
+					<option>Safari</option>
+				</optgroup>
+			</select><br /><br />	
+			
+			texto<textarea>
+			
+			</textarea><br /><br />	
+			Procurar Arquivo<input type="file" value="Limpar"  /><br />
+			<br /><br /><input type="reset" value="Limpar"  />
+			<input type="submit" value="Enviar" />
+			<input type="image" value="Enviar"  /><br />
+		</form>
+	</body>
+</html>
