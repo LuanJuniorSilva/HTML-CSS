@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+ 	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width:device-width" />
+		<link rel="icon" href="" />
+		<meta name="description" content="conteudo que fica no site" />
+		<link rel="stylesheet" type="text/css" href="_css/mobile.css" media="all and (max-width:320px)" />
+		<link rel="stylesheet" type="text/css" href="_css/tablet.css" media="all and (min-width:321px) and (max-width:960px)" />
+		<link rel="stylesheet" type="text/css" href="_css/style.css" media="all and (min-width:961px)" />
+		<script type="text/javascript" src=""></script>
+	</head>
+	<body>
+		
+			<h1>Fazendo Layouts Responsivos</h1>
+			<h2>Layout Responsivo dentro do css</h2>
+		<pre>
+			img,video{
+			max-width:100%; <- para a tamanho da tela do video e da imagem se ajuste com a tela
+			}
+			nav ul{
+				height:auto; <- altura automatica
+			}
+			nav li{
+				display:inline;
+			}
+			@media all and (min-width:960px){ /* apartir de 950px */
+				body{
+				width:960px;
+				margin:auto;
+				}
+				}
+			@media all and(max-width:480px){ /* apartir menos do que 480px abaixo de 480px */
+				nav{
+					height:100%;
+				}
+				nav li{
+					display:block;
+					padding:10px;
+					margin:0px;
+				}
+				
+			}
+			
+		</pre>
+		<hr />
+		<h2>Layout Responsivo atraves de links </h2>
+		<code>
+		&lt;meta name="viewport" content="width:device-width" /&gt;
+		</code>
+		<br />
+		<code>
+			&lt;link rel="stylesheet" type="text/css" href="_css/mobile.css" media="all and (max-width:320px)" /&gt;
+		</code>
+		<br />
+		<code>
+			&lt;link rel="stylesheet" type="text/css" href="_css/tablet.css" media="all and (min-width:321px) and (max-width:960px)" /&gt;
+		</code>
+		<br />
+		<code>
+			&lt;link rel="stylesheet" type="text/css" href="_css/style.css" media="all and (min-width:961px)" /&gt;
+		</code>
+	</body>
+</html>
