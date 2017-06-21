@@ -1,0 +1,305 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+#container,#topo,#secao,#sidebar,#rodape{
+	width:1200px;
+	margin:0 auto;
+}
+/*Topo*/
+#topo{
+	border:2px solid blue;
+	text-indent:30px;
+	height:80px;
+	background-color:#606060;
+}
+#menu{
+	border:2px solid blue;
+	margin-top:20px;
+	background-color:#dddddd;
+}
+#menu:hover{
+	transition:3s ease-in-out;
+	-moz-transition:3s ease-in-out;
+	-webkit-transition:3s ease-in-out;
+	-o-transition:3s ease-in-out;
+	-ms-transition:3s ease-in-out;
+	background-color:black;
+	color:red;
+}
+/*Seçao*/
+#secao{
+	border:3px solid black;
+	float:left;
+	width:590px;
+	margin-top:3px;
+	height:350px;
+}
+#a,#b,#c{
+	border:1px solid red;
+	height:110px;
+}
+#a{
+	background-image:url("img/lampada-acesa.jpg");
+	background-repeat:no-repeat;
+	transition:all 1s ease-in-out;
+	-moz-transition:all 1s ease-in-out;
+	-webkit-transition:all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+	-ms-transition:all 1s ease-in-out;
+}
+#a:hover{
+	transition:all 2s ease-in-out;
+	-o-transition:all 2s ease-in-out;
+	-ms-transition:all 2s ease-in-out;
+	-moz-transition:all 2s ease-in-out;
+	-webkit-transition:all 2s ease-in-out;
+	
+	transform:translate(300px,0px);
+	-moz-transform:translate(300px,0px);
+	-webkit-transform:translate(300px,0px);
+	-o-transform:translate(300px,0px);
+	-ms-transform:translate(300px,0px);
+	
+}
+#b{
+	background-image:url("img/lampada-apagada.jpg");
+	background-repeat:no-repeat;
+	transition:all 3s ease-in-out;
+	-moz-transition:all 3s ease-in-out;
+	-webkit-transition:all 3s ease-in-out;
+	-o-transition:all 3s ease-in-out;
+	-ms-transition:all 3s ease-in-out;
+}
+#b:hover{
+	transition:all 3s ease-in-out;
+	-moz-transition:all 3s ease-in-out;
+	-webkit-transition:all 3s ease-in-out;
+	-o-transition:all 3s ease-in-out;
+	-ms-transition:all 3s ease-in-out;
+	background-image:url("img/lampada-apagada.jpg");
+	background-repeat:no-repeat;
+	background-position:320px;
+}
+#c{
+	background-image:url("img/lampada-quebrada.jpg");
+	background-repeat:no-repeat;
+	transition:all 3.5s ease-in-out;
+	-o-transition:all 3.5s ease-in-out;
+	-moz-transition:all 3.5s ease-in-out;
+	-webkit-transition:all 3.5s ease-in-out;
+	-ms-transition:all 3.5s ease-in-out;
+}
+#c:hover{
+	background-image:url("img/lampada-quebrada.jpg");
+	background-repeat:no-repeat;
+	background-repeat:no-repeat;
+	background-position:320px;
+	transform:rotate(360deg);
+	transition:all 3.5s ease-in-out;
+	-moz-transition:all 3.5s ease-in-out;
+	-webkit-transition:all 3.5s ease-in-out;
+	-o-transition:all 3.5s ease-in-out;
+	-ms-transition:all 3.5s ease-in-out;
+}
+
+/*sidebar*/
+#sidebar{
+	border:3px solid black;
+	float:right;
+	margin-top:3px;
+	width:590px;
+	height:350px;
+}
+#art1,#art2,#art3{
+	border:1px solid red;
+	height:110px;
+}
+img{
+	width:190px;
+	height:105px;
+}
+#plano1,#plano2,#plano3{
+	position:relative;
+	float:left;
+	border:1px solid black;
+	width:194px;
+	height:109px;
+}
+#plano1{
+	transition:all 3s ease-in-out;
+	-moz-transition:all 3s ease-in-out;
+	-webkit-transition:all 3s ease-in-out;
+	-o-transition:all 3s ease-in-out;
+	-ms-transition:all 3s ease-in-out;
+	
+}
+#plano1 img:hover{
+	transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	-ms-transition:all 0.5s ease-in-out;
+	
+	width:160px;
+	transform:scale(1.5);
+	-o-transform:scale(1.5);
+	-moz-transform:scale(1.5);
+	-webkit-transform:scale(1.5);
+	-ms-transform:scale(1.5);
+}
+#plano2{
+	border-radius:0px;
+	transition:all 1s ease-in-out;
+	-moz-transition:all 1s ease-in-out;
+	-webkit-transition:all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+	-ms-transition:all 1s ease-in-out;
+}
+#plano2 img{
+	
+	transition:all 1s ease-in-out;
+	-moz-transition:all 1s ease-in-out;
+	-webkit-transition:all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+	-ms-transition:all 1s ease-in-out;
+}
+#plano2 img:hover{
+	opacity:0;
+	transition:all 1s ease-in-out;
+	-moz-transition:all 1s ease-in-out;
+	-webkit-transition:all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+	-ms-transition:all 1s ease-in-out;
+}
+#plano2:hover{
+	border-radius:40px;
+	transition:all 1s ease-in-out;
+	-moz-transition:all 1s ease-in-out;
+	-webkit-transition:all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+	-ms-transition:all 1s ease-in-out;
+}
+#plano3 figure figcaption{
+	opacity:0;
+	transition:all 1s ease-in-out;
+	-moz-transition:all 1s ease-in-out;
+	-webkit-transition:all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+	-ms-transition:all 1s ease-in-out;
+	position:absolute;
+	top:-1px;
+	left:30px;
+}
+#plano3:hover img{
+	transition:2s ease-in-out;
+	-moz-transition:2s ease-in-out;
+	-webkit-transition:2s ease-in-out;
+	-o-transition:2s ease-in-out;
+	-ms-transition:2s ease-in-out;
+	width:1px;
+}
+#plano3 img{
+	transition:2s ease-in-out;
+	-moz-transition:2s ease-in-out;
+	-webkit-transition:2s ease-in-out;
+	-o-transition:2s ease-in-out;
+	-ms-transition:2s ease-in-out;
+}
+#plano3 figure:hover figcaption{
+	transition:all 1s ease-in-out;
+	-moz-transition:all 1s ease-in-out;
+	-webkit-transition:all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+	-ms-transition:all 1s ease-in-out;
+	opacity:1;
+}
+/*artigo2*/
+div.animate{
+	width:50px;
+	height:50px;
+	color:white;
+	padding:2px;
+	background:blue;
+	position:relative;
+	}
+	#test1{
+	animation:animacao 3s linear infinite normal;
+	-moz-animation:animacao 3s linear infinite normal;
+	-webkit-animation:animacao 3s linear infinite normal;
+}
+	/*@keyframes animacao{
+		from{left:0px;}
+		to{left:210px;}
+	}
+	-moz-@keyframes animacao{
+		from{left:0px;}
+		to{left:210px;}
+	}
+	-webkit-@keyframes animacao{
+		from{left:0px;}
+		to{left:210px;}
+	}
+	*/
+	@keyframes animacao{
+		0%{top:0;left:0px;background:black;}
+		25%{top:0;left:380px;background:blue;}
+		50%{top:2px;left:380px;background:red;}
+		75%{top:0;left:100px;background:purple;}
+		100%{top:0;left:100px;background:green;}
+	}
+	@-moz-keyframes animacao{
+		0%{top:0;left:380px;background:black;}
+		25%{top:0;left:120px;background:blue;}
+		50%{top:-2;left:100px;background:red;}
+		75%{top:0;left:100px;background:purple;}
+		100%{top:0;left:100px;background:green;}
+	}
+	@-webkit-keyframes animacao{
+		0%{top:0;left:380px;background:black;}
+		25%{top:0;left:120px;background:blue;}
+		50%{top:-2;left:100px;background:red;}
+		75%{top:0;left:100px;background:purple;}
+		100%{top:0;left:100px;background:green;}
+	}
+	
+	
+#cor1,#cor2,#cor3{
+	position:relative;
+	float:left;
+	border:1px solid black;
+	width:194px;
+	height:109px;
+	cursor:pointer;
+	text-align:center;
+}
+#cor1{color:red;font-size:30px;}
+#cor2{color:blue;font-size:30px;}
+#cor3{color:yellow;font-size:30px;}
+/*cores JavaScript*/
+div#cores{
+	width:1196px;
+	height:130px;
+	clear:both;
+	border:2px solid black;
+}
+#a1,#a2,#a3{
+	border:1px solid black;
+	width:396px;
+	float:left;
+	height:130px;
+	cursor:pointer;
+}
+#a1{
+	background-color:black;
+}
+#a2{
+	background-color:red;
+}
+#a3{
+	background-color:blue;
+}
+#rodape{
+	clear:both;
+	border:3px solid black;
+}

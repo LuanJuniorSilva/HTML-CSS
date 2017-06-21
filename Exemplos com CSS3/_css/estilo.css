@@ -1,0 +1,60 @@
+﻿@charset "UTF-8";
+*{
+	margin:0;
+	padding:0;
+}
+#topo{
+	width:100%;
+	height:50px;
+	text-align:center;
+	padding:20px;
+	background-color:#036;
+	color:#fff;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+}
+#grande{
+	width:100%;
+	height:50px;
+	text-align:center;
+	padding:20px;
+	background-color:#600;
+	color:#fff;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+}
+#medio{
+	width:100%;
+	height:50px;
+	text-align:center;
+	padding:20px;
+	background-color:#090;
+	color:#fff;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+}
+#pequeno{
+	width:100%;
+	height:50px;
+	text-align:center;
+	padding:20px;
+	background-color:#90F;
+	color:#fff;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+}
+@media(max-width:480px){
+	#medio,#grande{
+		display:none;
+	}
+}
+@media(min-width:481px) and (max-width:960px){
+	#pequeno,#grande{
+		display:none;
+	}
+}
+@media(min-width:961px){
+	#pequeno,#medio{
+		display:none;
+	}
+}
