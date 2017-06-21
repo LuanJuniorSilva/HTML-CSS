@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rede Social dos Sonhos</title>
+	<meta name="description" content="">
+	<meta name="author" content="Luan Jr">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script> 
+	<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// $('[data-toogle="popover"]').popover();
+			$('[data-toogle="popover"]').popover({
+				placement: "bottom",//left,right,top,bottom
+				html: true,
+				delay:0,
+				animation: false
+			});
+
+			$('#custom-popover').on('click',function(){
+				$('#outro-popover').popover("show");
+			});
+
+			/*
+			$('#custom-popover').popover("show");//show,hide,toggle,destroy
+			$('show.bs.popover').on(function(){}); Imediatamente quando abrir o popover
+			$('shown.bs.popover').on(function(){});ja estiver aberto
+			$('hide.bs.popover').on(function(){}); Imediatamente quando fechar o popover
+			$('hidden.bs.popover').on(function(){}); ja estiver fechado*/
+		});
+	</script>
+</head>
+<body>
+	<div class="jumbotron">
+		<div class="container">
+			<button data-toogle="popover" id="outro-popover" data-content="Ola seja bem vindo" title="Mensagem <h2>ola</h2>">Ok</button>
+			<button id="custom-popover">chamar</button>
+		</div>
+	</div> 
+</body>
+</html>

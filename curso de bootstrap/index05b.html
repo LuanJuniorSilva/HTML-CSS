@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Curso de Front-End com Twitter Bootstrap" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Curso de Front-End com Twitter Bootstrap</title>
+		<link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/bootstrap-responsive.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/estilo.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript">
+				/*$('.btn-loading').on('click',function(){
+					var $btn = $(this).button('loading')
+					setTimeout(function(){
+						$btn.button('reset');
+					},1000);
+				});
+				*/
+				$(function(){
+					$('.btn-loading').on('click',function(){
+						$btn = $(this).button('loading');
+						setTimeout(function(){
+						  $btn.button('reset');
+						},1000);
+						});
+						});
+			</script>
+		<!--
+		<style type="text/css">
+			
+		</style> 
+		-->
+	</head>
+	<body>
+		<div class="jumbotron">
+			<div class="container">
+				<button data-loading-text="Finalizando, aguarde ..." class="btn btn-primary btn-loading">Finalizar Cadastro</button><br /><br /><br />
+			<div class="btn-group" data-toggle="buttons">
+				<label for="" class="btn btn-primary active">
+					<input type="radio" name="options" id="opt1" checked="true" /> radio box 01
+				</label>
+				<label for="" class="btn btn-primary">
+					<input type="radio" name="options" id="opt2" /> radio box 02
+				</label>
+				<br />
+				<br />
+				<label for="" class="btn btn-primary">
+					<input type="checkbox" name="options" id="opt1" /> checkbox 01
+				</label>
+				<label for="" class="btn btn-primary">
+					<input type="checkbox" name="options" id="opt2" /> checkbox 02
+				</label>
+			</div>
+			
+			</div>
+		</div>
+	</body>
+</html>
