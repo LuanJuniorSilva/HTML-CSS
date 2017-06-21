@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@author "Aline";
+/*Alterando tudo: */
+*{ 
+	font-family:arial;
+}
+
+/*Alterando fundo*/
+body{
+	background-color:#BEBEBE;
+}
+
+/*Alterando o fildset maior especial*/
+#especial{
+	width:80%;
+	margin:0 auto;
+	border-radius:15px;
+	background-color:white;
+	box-shadow:2px 2px 2px gray;
+}
+h1{
+	text-align:center;
+	color:purple;
+	text-shadow:2px 2px 2px black;
+}
+/*Formatando as classes:*/
+.menor{
+	border-radius:10px;
+}
+legend{
+	font-weight:bold;
+}
+input, select, textarea{
+	margin:4px;
+	border-radius:3px;
+}
+input:focus, select:focus, textarea:focus{
+	border:2px solid pink;
+	background-color:pink;
+}
+input:hover,select:hover,textarea:hover{
+	border:2px solid red;
+}
+
+
+
+
+
+
