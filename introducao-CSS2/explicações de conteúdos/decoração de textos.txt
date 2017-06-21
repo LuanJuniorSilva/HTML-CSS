@@ -1,0 +1,11 @@
+p {
+	text-decoration:underline;(texto sublinhado) 
+	ou overline; (linha acima do texto) 
+	ou line-through;(linha cortando o texto faz o mesmo efeito que del em xhtml)
+	ou blink (faz o texto piscar)
+
+
+	text-transform:capitalize; (faz a primeira letra de cada palavra do texto ficar com letra maiuscula)
+			uppercase; (faz com que todas as letras do texto fiquem com letra maiuscula)
+			lowercase; (faz com que todas as letras do testo fiquem com letra minuscula)
+}

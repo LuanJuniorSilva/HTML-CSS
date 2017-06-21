@@ -1,0 +1,51 @@
+                                         
+
+
+                                                         Tipos de Fontes
+
+                                                          Fontes Seguras
+
+Arial
+
+Arial black
+
+Comic Sans MS
+
+Courier New
+
+Impact
+
+Time New Roman
+
+Trebuchet MS
+
+Verdana
+
+
+                                                        (Grupo) Fontes Genéricas
+
+Serif
+
+Sans-Serif
+
+Cursive
+
+Fantasy
+
+Monospace
+
+
+p {
+
+	font-family:"lucida grande", "lucida sans", verdana, sans-serif;
+}
+
+
+
+
+	font-style:italic;ou oblique; ou  normal;ou inherit;
+
+	font-weight:bold;(negrito) ou lighter; ou valores de 100; até 900;
+
+	font-variant:small-caps;
+	font-size:20px;

@@ -1,0 +1,15 @@
+a. Inline
+b. Ids
+c.Classes, Pseudoclasses, atributos
+d.Elementos e Pseudoelementos
+
+
+p{}               0, 0, 0, 1             1
+
+div p{}           0, 0, 0, 2             2
+
+p.intro{}         0, 0, 1, 1             11
+
+#menu{}           0, 1, 0, 0             100
+
+style=""          1, 0, 0, 0             1000

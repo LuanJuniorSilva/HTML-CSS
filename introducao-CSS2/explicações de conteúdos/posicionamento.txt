@@ -1,0 +1,23 @@
+                  POSICIONAMENTO
+
+		-NORMAL
+
+		-FLOAT
+
+		-ABSOLUTO
+
+		 PROPRIEDADES
+
+		-POSITION
+
+		-FLOAT
+
+		-Z-INDEX
+
+		FLUXO NORMAL
+
+		-BLOCO E LINHA
+
+		#tit {
+	position:static;(normal)
+}

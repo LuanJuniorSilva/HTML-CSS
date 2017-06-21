@@ -1,0 +1,70 @@
+
+                               		     Background 
+				
+						COLOR
+
+				background-color:activeborder; ou 
+
+				background-color:red; ou
+
+				background-color:rgb(10%,20%,30%); ou
+
+				background-color:rgb(125,210,90);
+
+				background-color:#6699ff;
+
+________________________________________________________________________________________________________
+
+						IMAGE
+
+
+				background-image:url("");
+
+________________________________________________________________________________________________________
+				       
+						REPEAT
+
+				background-repeat:no-repeat;(não repetir a foto)
+
+				background-repeat:repeat-y;(de cima pra baixo)vertical
+
+				background-repeat:repeat-x;(de um lado para o outro)horizontal
+
+				background-repeat:repeat(repetir até preencher todo espaço)
+
+________________________________________________________________________________________________________
+
+					       ATTACHMENT
+
+	background-attachment:fixed;(faz com que a foto do quadro fique justa com as fotos por fora)
+	
+	background-attachment:scroll;
+
+________________________________________________________________________________________________________
+				
+						POSITION
+ 
+	background-position:left top;(a foto fica a esquerda e acima da tela)
+	
+	background-position:center top;(centraliza a foto no meio e acima da tela)
+
+	background-position:right top;(a foto fica a direita e acima da tela)
+
+	background-position:left center;(a foto fica a esquerda sobre o centro abaixo no meio da tela)
+
+	background-position:center center;(a foto fica no centro e no meio da tela)
+
+	background-position:right center;(a foto fica a direita e no meio da tela)
+
+	background-position:left bottom;(a foto fica a esquerda e em baixo da tela)
+
+	background-position:center bottom;(a foto fica no centro e em baixo da tela)
+
+	background-position:right bottom; (a foto fica a direita e em baixo da tela)
+
+	background-position:20px 90px;
+
+	background-position:50% 50%;
+
+	background-position:-10px -10px;
+	

@@ -1,0 +1,18 @@
+a[href^="http"] {
+	background:url(img/letrab.gif) no-repeat right top;
+	padding-right:15px;
+} 
+
+a[href^="mailto"] {
+	background:url(img/letrac.gif) no-repeat right top;
+	padding-right:15px;
+} 
+
+a[href$=".zip"] {
+	background:url(img/letraz.gif) no-repeat right top;
+	padding-right:15px;
+} 
+
+a img {
+	border:none;
+}

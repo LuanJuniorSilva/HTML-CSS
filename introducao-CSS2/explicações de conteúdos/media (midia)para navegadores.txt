@@ -1,0 +1,22 @@
+lumis.com.br
+
+
+tipos de media 
+
+screen=monitores
+
+tty=teletipo
+
+tv=televisão
+
+projection=para projetores
+
+handheld=para dispositivos moveis
+
+print=para impressora e para visualização de impressão
+
+braille=para dispositivos de tartes(tablet)
+
+aurall=sintetizadores de voz
+
+all=para todos os dispositivos

@@ -1,0 +1,34 @@
+				Estilização de Listas
+
+ul {
+	list-style-type:none;(retirarndo a imagem)
+
+			square;(quadradro preto) 
+
+			ou circle;(circulo branco) 
+
+			ou disc;(circulo preto)
+	
+			ou decimal;(marca de 1 até ...)
+
+			ou decimal-leadinhg-zero;(marca de com o na frente do numero até ...)
+
+			ou lower-roman;(numeros romanos em minusculos)
+
+			ou upper-roman;(numeros romanos em maisculos)
+
+			ou georgian;(algarismos georgianos)
+
+			ou armenian;(algurismos em armenianos)
+
+			ou lower-latin;(letras normais minusculas)
+
+			ou upper-latin;(letras normais maiusculas)
+
+			ou lower-greek;
+
+			list-style-position:outside;(deixa quase a mesma forma)
+
+			 ou inside;(deixa um pouco mais no centro)
+
+}

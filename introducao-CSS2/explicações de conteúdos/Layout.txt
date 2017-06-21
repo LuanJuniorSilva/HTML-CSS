@@ -1,0 +1,46 @@
+
+			GERAL
+			 TOPO
+ESQUERDA		CENTRO		DIREITA
+			RODAPE
+
+
+			CONTAINER
+			 HEADER
+	    LEFT	 CENTER		   RIGHT
+			 FOOTER
+
+NOMES DEVEM DEFINIR SUAS ÁREAS 
+-MENU, CONTEUDO, DESTAQUE, RODAPE, BLOGS
+
+
+
+
+
+	largura fixa
+
+#container {
+	border:1px solid black;
+	width:500px;
+}
+_____________________________________________________________________
+	largura liquida
+
+	  #container {
+	border:1px solid black;
+	width:80%;
+	min-width:300px;(largura minima)
+}   
+_____________________________________________________________________
+		
+	largura elástica
+
+
+* {
+	font-size:12px;
+
+}
+#container {
+	border:1px solid black;
+	width:40em;
+}

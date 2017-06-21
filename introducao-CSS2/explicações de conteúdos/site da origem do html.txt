@@ -1,0 +1,3 @@
+http://www.w3c.br/Home/WebHome
+http://www.w3schools.com
+http://validator.w3.org/#validate_by_input

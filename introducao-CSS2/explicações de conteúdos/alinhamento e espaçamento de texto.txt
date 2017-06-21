@@ -1,0 +1,23 @@
+                                  
+
+
+
+                                   Espaçamento e Alinhamento de textos
+
+          espaçamento em letras= letter-spacing:10px; (pode ser negativo)
+
+          espaçamento em palavras=   word-spacing:10px; (pode ser negativo)
+
+          espaçamentos em linhas=    line-height:30px;
+
+          
+	span {
+	vertical-align:sub; ou sup;
+}
+
+p {
+	text-align:justify; ou center; ou right; ou left;
+
+
+	text-indent:30px;(pode ser negativo)
+}

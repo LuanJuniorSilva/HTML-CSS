@@ -1,0 +1,15 @@
+h1, h3, p {
+	border:1px solid black;
+	
+	
+}
+p {
+	background:#DDDDDD;
+}
+span.destaque {
+		width:40%;
+	border:1px solid black;
+	float:right;
+	background-color:white;
+}
+

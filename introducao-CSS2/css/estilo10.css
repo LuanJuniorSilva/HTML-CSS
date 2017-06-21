@@ -1,0 +1,13 @@
+body {
+	background-image:url(img/fuzil.jpg);
+	background-repeat:repeat;
+	
+}
+
+div  {
+	width:320px;
+	height:320px;
+	border:2px solid black;
+	
+	background:#6699ff url("img/fuzil.jpg") repeat;
+}

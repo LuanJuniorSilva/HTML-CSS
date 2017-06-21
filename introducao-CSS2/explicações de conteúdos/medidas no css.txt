@@ -1,0 +1,24 @@
+                                      
+
+
+
+
+                                               medidas absolutas
+
+                               5in
+
+                               5cm
+
+                               5mm
+
+                               5pt
+
+                               5pc
+
+                                              medidas relativas
+
+                              5em
+
+                              5ex
+
+                              5px

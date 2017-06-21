@@ -1,0 +1,7 @@
+p {
+	margin:50px;
+	padding:50px;
+	border-width:5px;
+	border-color:red yellow black cyan;
+	border-style:solid; 
+}

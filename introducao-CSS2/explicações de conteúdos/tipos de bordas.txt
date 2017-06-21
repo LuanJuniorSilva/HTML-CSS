@@ -1,0 +1,25 @@
+                 tipos de borda (boxmodel)
+
+border-style
+
+
+borda sólisa                          solid
+
+borda auto relevo                     ridge
+
+borda pontilhada                      dotted
+
+borda trassejada                      dashed
+
+borda com linhas duplas               double
+
+borda voltada para baixo               inset
+
+borda voltada para cima                outset
+
+
+ver mais bordas em:
+
+http://ago.tanfa.co.uk/css/boders/house.html
+
+http://infimum.dk/html/slantinfo.html
