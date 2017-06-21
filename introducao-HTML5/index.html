@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="viewport" content="width=device-width; scale-initial=1.0; maximum-scale=1.0; user-scalable=1">
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Luan Jr">
+		<meta name="keywords" content="palavras chaves">
+		<meta name="description" content="introdução">
+		<meta name="apple-mobile-web-app-capable" content="yes"><!-- Faz com que não apareça as opções do navegador mobile, some com a barra de navegação -->
+		<link rel="apple-touch-startup-image" href="/img/startup.png">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/apple-touch-icon-iphone.png"><!-- ou apple-touch-icon -->
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/apple-touch-icon-ipad.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/apple-touch-icon-retina.png">
+
+		<title>Página do Curso de HTML5</title>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css" />
+	</head>
+	<body>
+	<!--
+	Elementos multimídia:
+	oncanplay - O elemento audio ou video já tem dados suficientes no buffer para começar a tocar.
+oncanplaythrough - O elemento audio ou video já tem dados suficientes no buffer para começar a tocar e, se a tranferência de dados continuar no ritmo em que está ocorrendo, estima-se que tocará até o final sem interrupções.
+ondurationchange - O elemento audio ou video teve seu atributo duration modificado. Isso acontece, por exemplo, ao alterar a origem da mídia.
+onemptied - O elemento audio ou video teve um erro de retorno vazio de dados da rede. O retorno vazio acontece quando, por exemplo, você tenta invocar o método play de um elemento que ainda não tem uma origem de mídia definida.
+onended - O vídeo ou áudio chegou ao fim.
+onloadeddata - Os dados começaram a ser carregados e a posição atual de playback já pode ser renderizada.
+onloadedmetadata - Os metadados foram carregados. Já sabemos as dimensões, formato e duração do vídeo.
+onloadstart - Os dados começaram a ser carregados.
+onpause - O usuário clicou em pause.
+onplay  - O usuário clicou em play ou o playback começou por causa do atributo autoplay
+onplaying - O vídeo ou áudio está tocando.
+onprogress - O agente de usuário está buscando dados do vídeo ou áudio.
+
+
+Eventos em campos de formulário:
+oninput - O usuário entrou com dados no campo
+oninvalid - O campo não passou pela validação
+
+Eventos gerais:
+oncontextmenu - O usuário disparou um menu de contexto sobre o objeto. Na maioria dos sistemas Desktop, isso significa clicar com o botão direito do mouse ou segurando uma tecla especial.
+onmousewheel - A rodinha do mouse foi acionada.
+onbeforeprint - Disparado antes da impressão da página. Você pode usá-lo para modificar, esconder ou exibir elementos, preparando a página para impressão.
+onafterprint - Disparado após a impressão da página. Você pode usá-lo para reverter o status anterior à impressão.
+onhashchange - A última porção da URL, após o hash (#), foi modificada.
+onoffline - O agente de usuário ficou offline.
+ononline - O agente de usuário está novamente conectado.
+onredo - O usuário disparou a ação de “Refazer”.
+onundo - O usuário disparou a ação de “Desfazer”.
+
+-->
+<!-- 
+			API: Métodos
+
+			load(): carrega a mídia (audio/video) e a prepara para tocar.
+
+			play(): carrega a mídia (se for necessário) e começa a tocar.
+
+			pause(): pausa a mídia no meio, se esta opção estiver ativa.
+
+			canPlayType(type): testa se pode tocar um arquivo hipotético (type correspondente ao MIME TYPE)
+
+			API: Atributos (read-only)
+
+			duration
+			paused
+			ended
+			startTime
+			error
+			currentSrc
+
+			API: Atributos
+
+			autoplay
+			loop
+			currentTime
+			controls
+			volume
+			muted
+			autobuffer
+
+			API: Atributos de Video
+
+			poster
+			width
+			height
+			videoWidth
+			videoHeight
+
+
+			____________________________________________________
+
+			Landmark Roles
+
+			banner:			area de banner
+			search:			area de busca
+			navigation:		area de navegação
+			main:			conteúdo principal
+			contentinfo:	area de informações sobre o conteúdo (copyright, data de publicação, etc)
+			complementary:	conteúdo complementar
+			application:	area de uma aplicação web
+
+			Document Roles
+
+			document		listitem
+			article 		math
+			definition		note
+			directory		presentation
+			heading			row
+			img 			rowheader
+			list
+
+			____________________________________________________
+
+			API Storage
+
+			Session Storage
+			Local Storage
+			Métodos:
+			 getItem(key)
+			 setItem(key,value)
+			 removeItem(key)
+			 clear()
+
+			 Session Storage
+
+			 Armazena um valor em uma chave
+			 sessionStorage.setItem('curso','HTML5 e CSS3');
+
+			 Recupera o valor de uma chave
+			 var curso = sessionStorage.getItem('curso');
+
+			 Remove um dado específico
+			 sessionStorage.removeItem('curso');
+
+			 Apaga todos os dados
+			 sessionStorage.clear();
+
+			 ___________________________________________________
+
+			 Microdata
+
+			 Enriquecendo aindam mais a semântica da página
+			 Evolução dos Microformats
+
+			 itemscope
+			 itemtype
+			 itemprop
+			 content
+
+			 Drag and Drop
+
+			 Permite tornar elementos da página "arrastáveis"
+			 Atributo draggable (="true")
+			 Eventos (objeto de origem): 
+			  dragstart, drag, dragend
+			 Eventos (objeto de destino):
+			  dragenter, dragleave, dragover, drop
+
+			  Geolocation
+
+			  getCurrentPosition(showpos,erropos,options)
+			  w = watchPosition(showpos,erropos,options)
+			  options:
+			   enableHighAccuracy
+			   timeout
+			   maximuAge
+
+		
+	 -->
+	 <!--
+	<nav id="menu" data-scope="global" data-position="horizontal">
+		<ul></ul>
+	</nav>
+
+	Atributo Global data-*
+	elem.dataset.scope(=)
+	elem.getAttribute('data-scope')
+	elem.setAttribute('data-scope', 'local')
+	-->
+		<header id="cabecalho">
+			<h1 id="topo">HTML5 para Iniciantes</h1>
+			<h2>Elemento em Bloco</h2>
+			<hgroup>
+				<h1>Grupo 1</h1>
+				<h2>Grupo 2</h2>
+				<h3>Grupo 3</h3>
+				<h4>Grupo 4</h4>
+				<h5>Grupo 5</h5>
+				<h6>Grupo 6</h6>
+
+			</hgroup>
+
+			<pre>
+				texto
+					pré
+						Formatado!!!
+			</pre>
+			<blockquote>
+				Bloco!!!
+			</blockquote>
+			<p>
+				eu sou um p de paragrafo!
+			</p>
+			<address>
+				citação em bloco
+			</address>
+		</header>
+		<hr /> 
+		<h2>Elemento Inline(em linha)</h2>
+		<p>
+		<b>O</b> <i>rato</i> <del>roeu</del> <big>a</big> <tt>roupa</tt> <small>do</small> <em>rei</em> de <q>roma</q> <strong>ok?</strong> <br />
+		o <sup>gato</sup> caça o <sub>rato</sub> e o cão caça o gato.
+		</p>
+		
+		<div>
+			<math>
+				 <mrow>
+					 <mi>x</mi>
+					 <mo>=</mo>
+					 <mfrac>
+						 <mrow>
+							 <mo form=”prefix”>&minus;</mo>
+							 <mi>b</mi>
+							 <mo>&PlusMinus;</mo>
+							 <msqrt>
+								 <msup>
+									 <mi>b</mi>
+									 <mn>2</mn>
+								 </msup>
+								 <mo>&minus;</mo>
+								 <mn>4</mn>
+								 <mo>&InvisibleTimes;</mo>
+								 <mi>a</mi>
+								 <mo>&InvisibleTimes;</mo>
+								 <mi>c</mi>
+							 </msqrt>
+						 </mrow>
+						 <mrow>
+						 <mn>2</mn>
+						 <mo>&InvisibleTimes;</mo>
+						 <mi>a</mi>
+						 </mrow>
+					 </mfrac>
+				 </mrow>
+			 </math>
+		</div>
+		<hr />
+		<h2>Elemento Depreciado(caiu de desuso)</h2>
+		<u>Sublinhado</u>
+		<p align="center">Alinhamento ao centro</p>
+		<blink>
+			Texto Piscando
+		</blink>
+		<marquee>Texto correndo</marquee>
+		<hr />
+		<h2>Aula de Listas</h2>
+
+		<h3>Listas Ordenadas</h3>
+
+		<ol>
+			<li>lista 1</li>
+			<li>lista 2</li>
+			<li>lista 3</li>
+		</ol>
+		<ol type="a">
+			<li>lista 1</li>
+			<li>lista 2</li>
+			<li>lista 3</li>
+		</ol>
+		<ol type="A">
+			<li>lista 1</li>
+			<li>lista 2</li>
+			<li>lista 3</li>
+		</ol>
+		<ol type="i">
+			<li>lista 1</li>
+			<li>lista 2</li>
+			<li>lista 3</li>
+		</ol>
+		<ol type="I">
+			<li>lista 1</li>
+			<li>lista 2</li>
+			<li>lista 3</li>
+		</ol>
+		<ol start="2">
+			<li>lista 1</li>
+			<li>lista 2</li>
+			<li>lista 3</li>
+		</ol>
+		<h3>Listas Não Ordenadas </h3>
+		<ul>
+			<li>lista 1</li>
+			<li>lista 2</li>
+			<li>lista 3</li>
+		</ul>
+		<ul>
+			<li>lista 1</li>
+			<li>lista 2</li>
+			<li>lista 3</li>
+		</ul>
+		<h3>Listas Mistas</h3>
+		<ul>
+			<li>lista 1
+				<ol type="a">
+				<li>Hello!</li>
+				</ol>
+			</li>
+			<li>lista 2
+				<ul>
+					<li>tipo1</li>
+					<li>tipo2
+						<ul>
+							<li>estilo 1
+								<ul>
+									<li>Não funciona mais</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+
+		</ul>
+
+		<h3>Lista de Definição</h3>
+		<dl>
+			<dt>Cidades do RS</dt>
+			<dd>Porto Alegre</dd>
+			<dd>Canoas</dd>
+		</dl>
+		<hr />
+		<h2>Aula de cores</h2>
+		<font style="color:#8893DC;">Text here</font>
+		<h3>Os cinco Metódos de usar as cores</h3>
+		<h4>1 <sup>a</sup> Forma decimal</h4>
+		<p style="color:darkgreen;">Hello World!</p>
+
+		<h4>2 <sup>a</sup> Forma hexadecimal</h4>
+		<p style="color:#4136BF;">Hello World!</p>
+
+		<h4>3 <sup>a</sup> Forma RGB (red, green, blue)</h4>
+		<p style="color:rgb(245,55,12);">Hello World!</p>
+
+		<h4>3 <sup>a</sup> Forma HSB</h4>
+		<p style="color:hsl(312,953,936);">Hello World!</p>
+
+		<h4>3 <sup>a</sup> Forma RGBA (red, green, blue,alpha)</h4>
+		<p style="color:rgba(0,0,0,.1);">Hello World!</p>
+
+		<hr />
+
+		<h2>Aula de Tabela</h2>
+
+		<table border="1" cellpadding="3" cellspacing="3" >
+			<tr><td style="background-color:#ddd;">Cidade</td><td style="background-color:#ddd;">Bairro</td><td style="background-color:#ddd;"	>Ruas</td><td rowspan="3">Expansão</td></tr>
+			<tr><td rowspan="2">Canoas</td><td rowspan="2">Niterói</td><td>Epitacio Pessoa</td></tr>
+			<tr><td>Marechal Deodoro</td></tr>
+			<tr><td colspan="4" style="text-align:center;">Expansão 2</td></tr>
+		</table>
+		
+		<legend>Legenda da Tabela</legend>
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Email</th>
+					<th>Idade</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td colspan="3">Aqui é o rodapá da Tabela</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>Fulano</td>
+					<td>fulano@hotmail.com</td>
+					<td>22</td>
+				</tr>
+				<tr>
+					<td>Ciclano</td>
+					<td>ciclano@hotmail.com</td>
+					<td>25</td>
+				</tr>
+				<tr>
+					<td>Beutrano</td>
+					<td>beutrano@gmail.com</td>
+					<td>25</td>
+				</tr>
+			</tbody>
+		</table>
+		<hr />
+		<h2 class="int">Aula SVG de HTML 5</h2>
+			<svg width="100" height="100">
+				<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+			</svg>
+		
+			<svg width="400" height="100">
+				<rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+			</svg>
+		
+			<svg width="400" height="180">
+			  <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+			  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+			</svg>
+		
+			<svg width="300" height="200">
+			  <polygon points="100,10 40,198 190,78 10,78 160,198"
+			  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+			</svg><br />
+		
+		<svg height="130" width="500">
+		  <defs>
+			<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+			  <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+			  <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+			</linearGradient>
+		  </defs>
+		  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+		  <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+		  Sorry, your browser does not support inline SVG.
+		</svg>
+		
+		<hr />
+		<h2>Aula de Links</h2>
+		<h3>Link Externo para Paginas Web</h3>
+		<a href="http://www.google.com.br">Ir para o Google na mesma aba</a><br />
+		<a href="http://www.google.com.br" target="_blink">Ir para o Google em uma nova aba</a><br />
+
+		<h3>Link Externo para pagina criada por você</h3>
+		<a href="teste/paginateste.html" target="_blink">Ir para pagina teste</a><br />
+		<h3>Link Interno</h3>
+		<a href="#topo">Ir para o Topo</a>
+		<br />
+		<hr />
+
+		<h2>Aula de Imagens</h2>
+		<a href="teste/paginateste.html" target="_blank">
+			<img src="img/Desert.jpg" alt="Deserto"  title="Deserto" width="320" />
+
+
+		</a><br />
+
+		<img src="img/koala.jpg" alt="coala" title="Coala" usemap="#coala" />
+		<map>
+			<area shape="circle" coords="663,427,21" href="#" />
+		</map>
+
+		<hr />
+		<h2>Aula de Midias</h2>
+		<h3>Audio</h3>
+		<audio controls="controls" >
+			<source src="midias/audio.mp3" type="audio/mp3" />
+		</audio>
+		<h3>Video</h3>
+		<video poster="img/HTML5_Badge_512.png" controls="controls">
+			<source src="midias/video.mp4" type="video/mp4" />
+		</video>
+		<hr />
+
+		<h2>Aula de Formulario</h2>
+		<form action="" method="post">
+			<label for="nome1">Nome</label><input type="text" id="nome1" value="Nome" /><br />
+			<label for="nome2">Nome</label><input type="text" id="nome2" placeholder="Nome" /><br />
+			Nome<input type="text" value="não digite" id="" disabled="disabled" /><br />
+			Nome<input type="text" value="não digite" id="" readonly="readonly" /><br />
+			Senha<input type="password" value="Senha" /><br />
+			Senha<input type="password" placeholder="Senha" /><br /><br />
+
+			Telefone<input type="tel" placeholder="Telefone" /><br />
+			E-mail<input type="email" placeholder="E-mail" /><br />
+			Site<input type="url" placeholder="Site" /><br />
+			Cor<input type="color" placeholder="Cor" /><br />
+			Hora<input type="time" placeholder="hora" /><br />
+			Data<input type="date" placeholder="data" /><br />
+			-<input type="range" placeholder="" /><br />
+			Data & Hora<input type="datetime" placeholder="data" /><br />
+			Numero<input type="number" placeholder="Numero" max="10" min="-3" /><br />
+
+
+			<label for="ww">week:</label>
+			<input type="week" id="ww" /><br />
+
+			<label for="ll">month:</label>
+			<input type="month" id="ll" /><br />
+
+			<label for="fone">Fone:</label>
+			<input type="phone" id="fone" /><br />
+
+
+			<label for="busca">Campo de Busca:</label>
+			<input type="search" id="busca" /><br />
+
+			<contenteditable>digite aqui...
+			</contenteditable>
+
+			<fieldset>
+			<legend>Sexo:</legend>
+
+			<input type="radio" name="sexo" value="M" />Masculino
+			<input type="radio" name="sexo" value="F" />Feminino
+			</fieldset>
+
+			<input type="checkbox" name="sexo" value="M" checked />Masculino
+			<input type="checkbox" name="sexo" value="F" />Feminino
+			<br />
+			<br />
+			País:
+			<select>
+				<option>Brasil</option>
+				<option>EUA</option>
+				<option>Japão</option>
+			</select>
+			<br />
+			Editores & Navegadores:<br />
+			<select>
+				<optgroup label="Editores">
+					<option>Notepad++</option>
+					<option>HTML-KIT</option>
+					<option>Dream Weaver</option>
+				</optgroup>
+				<optgroup label="Navegadores">
+					<option>Mozila</option>
+					<option>IE</option>
+					<option>Cromme</option>
+				</optgroup>
+			</select>
+
+			<br /><br />
+			<input type="button" value="validar" />
+			<input type="reset" value="Limpar" />
+			<input type="submit" value="Entrar" />
+		</form>
+		<div>
+			<h2>Extra</h2>
+			<h3>Meter</h3>
+				<meter value="2" min="0" max="10">2 out of 10</meter><br>
+				<meter value="0.6">60%</meter>
+				<br /><hr />
+				<h3>Progress</h3>
+				<progress value="2" min="0" max="10">2 out of 10</progress><br>
+				<progress value="0.6">60%</progress>
+				<br />
+				<details>
+		<summary>Copiando <progress max="39248" value="14718"></progress> 37,5%</summary>
+		<dl>
+			<dt>Tamanho total:</dt>
+			<dd>39.248KB</dd>
+			<dt>Transferido:</dt>
+			<dd>14.718</dd>
+			<dt>Taxa de transferência:</dt>
+			<dd>127KB/s</dd>
+			<dt>Nome do arquivo:</dt>
+			<dd>HTML5.mp4</dd>
+		</dl>
+		</details>
+		<div contenteditable=”true”>
+			Edite-me...
+		</div>
+				
+				
+			<h3>Formulario</h3>
+				<form action="" method="post">
+				  Nome: <input type="text" name="usr_name">
+				  Chave de Segurança: <keygen name="security">
+				  <input type="submit">
+				</form>
+		</div>
+</body>
+</html>
