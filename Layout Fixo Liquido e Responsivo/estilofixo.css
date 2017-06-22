@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+body{
+	background-color:#FFDAB9;
+	font-family: verdana;
+	font-size:12pt;
+	text-align:justify;
+	text-indent:30px;
+}
+#geral{
+	width:900px;
+	margin: 0 auto;
+}
+#topo{
+	background-image:url(topo.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:white;
+	height:180px;
+}
+#esquerda{ /*230 + 10 = 240*/
+	width:230px; 
+	background:aquamarine;
+	padding: 5px 5px;
+	float:left;
+}
+#centro{ /*390 + 10 + 10(margem esquerda) + 10(margem direita) = 420*/
+	width:390px;
+	margin:0 10px;
+	padding: 5px 5px;
+	background:burlywood;
+	
+	float:left;
+}
+#direita{/*230 + 10 = 240*/
+	width:230px;
+	padding: 5px 5px;
+	background:darkseagreen;
+	float:left;
+}
