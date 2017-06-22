@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+<style>
+div
+{
+width:150px;
+height:100px;
+background:blue;
+position:relative;
+animation:aprendendoCSS3animation 25s;
+-moz-animation:aprendendoCSS3animation 25s; /* Firefox */
+-webkit-animation:aprendendoCSS3animation 25s; /* Safari e Chrome */
+-o-animation:aprendendoCSS3animation 25s; /* Opera */
+}
+  
+@keyframes aprendendoCSS3animation
+{
+0%   {background:blue; left:0px; top:0px;}
+25%  {background:black; left:250px; top:0px;}
+50%  {background:purple; left:250px; top:250px;}
+75%  {background:green; left:0px; top:250px;}
+100% {background:grey; left:0px; top:0px;}
+}
+  
+@-moz-keyframes aprendendoCSS3animation /* Firefox */
+{
+0%   {background:blue; left:0px; top:0px;}
+25%  {background:black; left:250px; top:0px;}
+50%  {background:purple; left:250px; top:250px;}
+75%  {background:green; left:0px; top:250px;}
+100% {background:grey; left:0px; top:0px;}
+}
+  
+@-webkit-keyframes aprendendoCSS3animation /* Safari e Chrome */
+{
+0%   {background:blue; left:0px; top:0px;}
+25%  {background:black; left:250px; top:0px;}
+50%  {background:purple; left:250px; top:250px;}
+75%  {background:green; left:0px; top:250px;}
+100% {background:grey; left:0px; top:0px;}
+}
+  
+@-o-keyframes aprendendoCSS3animation /* Opera */
+{
+0%   {background:blue; left:0px; top:0px;}
+25%  {background:black; left:250px; top:0px;}
+50%  {background:purple; left:250px; top:250px;}
+75%  {background:green; left:0px; top:250px;}
+100% {background:grey; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+  
+<p><strong>Nota 1:</strong> Infelizmente o exemplo citado não funciona no Internet Explorer</p>
+<p><strong>Nota 2:</strong> Quando a animação estiver finalizada, irá voltar ao estado original incial. </p>
+ 
+  
+<div></div>
+  
+</body>
+</html>
+
+Read more: http://www.linhadecodigo.com.br/artigo/3644/css3-animations-criando-animacoes-com-css.aspx#ixzz3PDtr5jdJ
